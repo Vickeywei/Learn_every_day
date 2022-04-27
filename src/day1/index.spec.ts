@@ -19,7 +19,6 @@ test("Array.prototype.map", () => {
   expect(newArr).not.toEqual(arr)
   expect(newArr).toEqual([0, 2, 3])
   expect(arr).toEqual([1,2,3])
-  
 })
 
 test("Array.prototype.filter", () => {
@@ -29,7 +28,6 @@ test("Array.prototype.filter", () => {
   expect(newArr).not.toEqual(arr)
   expect(newArr).toEqual([0, 2, 3])
   expect(arr).toEqual([1,2,3])
-  
 })
 
 test("Array.prototype.slice", () => {
@@ -39,7 +37,6 @@ test("Array.prototype.slice", () => {
   expect(newArr).not.toEqual(arr)
   expect(newArr).toEqual([0, 2, 3])
   expect(arr).toEqual([1,2,3])
-  
 })
 
 test("Array.prototype.from", () => {
@@ -49,7 +46,6 @@ test("Array.prototype.from", () => {
   expect(newArr).not.toEqual(arr)
   expect(newArr).toEqual([0, 2, 3])
   expect(arr).toEqual([1,2,3])
-  
 })
 
 test("Array clone with operator symbol", () => {
@@ -59,5 +55,4 @@ test("Array clone with operator symbol", () => {
   expect(newArr).not.toEqual(arr)
   expect(newArr).toEqual([0, 2, 3])
   expect(arr).toEqual([1,2,3])
-  
 })
