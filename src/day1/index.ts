@@ -30,6 +30,13 @@ const helloVicky = `hello my name is ${name}, age is ${age} ,gender is ${gender}
 console.log(helloVicky)
 
 
+const sym = Symbol()
+const obj = {
+  [sym]: "semlinker"
+}
+
+console.log(obj[sym]);
+
 /*
 数组
 */
@@ -68,8 +75,28 @@ const colora: Color = Color.Red
 console.log(colora)
 
 const colorName: string = Color[3]
+const valueName:any  = 'Red'
+const value : string = Color[valueName]
+console.log(colorName,value,2)
 
-console.log(colorName)
+// 数字枚举
+
+enum numberEnum { North, South, East, West }
+
+console.log(numberEnum.North)
+
+// 字符串枚举
+enum stringEnum { North = "North", South = "South", East = "East", West = "West" }
+console.log(stringEnum.North)
+
+// 常量枚举
+
+const enum constEnum { NORTH, SOUTH, EAST, WEST }
+
+
+// 异构枚举
+enum Enum { A="a", B = 8, C = "CC", D="D" }
+console.log(Enum.A)
 
 /*
 Any
@@ -86,6 +113,21 @@ console.log(anya)
 
 // console.log(anya.ifItExists())
 // console.log(anya.toFixed())
+
+/*
+Unknown
+*/
+let value1: unknown;
+value1 = true;
+console.log(value1);
+value1 = 'hello typescript'
+console.log(value1);
+
+let value4: string = 'aaaaa'
+value4 = ''
+// value4 = value1 // 不能将unknow的类型赋值给其他类型的变量
+
+const valueany:any = value1
 
 const anyb: object = {}
 console.log(anyb.valueOf())
